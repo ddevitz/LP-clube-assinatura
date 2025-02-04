@@ -1,0 +1,18 @@
+body{
+  position: relative;
+  
+  .bg-hero{
+    position: absolute;
+
+    z-index: -1;
+    bottom: 1;
+    object-fit: cover;
+  }
+  
+  .mobile-only{
+    & > img{
+      width: 375px;
+      height: 464px;
+    }
+  }
+}

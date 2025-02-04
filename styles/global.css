@@ -30,7 +30,7 @@
   --title-lg: 700 3rem var(--font-family);
   --title-md: 700 2.5rem var(--font-family);
   --title-sm: 700 2rem var(--font-family);
-  --title-xs: 700 1rem var(--font-family);
+  --title-xs: 700 1rem var(--font-family); 
   
   --body-lg: 400 1.25rem/140% var(--font-family);
   --body-md: 400 1rem/140% var(--font-family);
@@ -46,6 +46,9 @@
 body{
   color: var(--text-body);
   font: var(--body-md);
+
+  background-color: var(--shape-background);
+  height: 100vh;
 }
 
 h1, 
@@ -73,4 +76,26 @@ button{
 
 ul[role="list"]{
   list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+.mobile-only{
+  display: initial;
+}
+
+.desktop-only{
+  display: none;
+}
+
+@media (min-width: 80em){
+  .desktop-only{
+    display: initial;
+  }  
+
+  .mobile-only{
+    display: none;
+  }  
 }

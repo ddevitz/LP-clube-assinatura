@@ -1,9 +1,9 @@
 h1{
-  font: var(--title-lg);
+  font: 700 1.75rem var(--font-family);
 }
 
 h2{
-  font: var(--title-sm);
+  font: 700 1.5rem var(--font-family);;
 }
 
 h3{
@@ -15,36 +15,34 @@ label{
   color: var(--text-label);
 }
 
-.subtitle{
-  font: var(--subtitle);
-}
-
 strong{
   color: var(--blue-light);
-}
-
-.button-primary{
-  background-color: var(--pink-dark);
-}
-
-.button-primary:hover{
-  background-color: var(--pink-base);
-}
-
-.button-secondary{
-  background-color: var(--blue-dark);
-}
-
-.button-secondary:hover{
-  background-color: var(--blue-mid);
 }
 
 ul li{
   font: var(--body-xs);
 }
 
+.subtitle{
+  font: var(--body-md);
+}
+
 .tag{
   font: var(--tag);
   text-transform: uppercase;
   letter-spacing: 5%;
+}
+
+@media (min-width: 80em){
+  h1{
+    font: var(--title-lg);
+  }
+  
+  h2{
+    font: var(--title-sm);
+  }
+
+  .subtitle{
+    font: var(--subtitle);
+  }  
 }
