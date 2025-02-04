@@ -1,0 +1,50 @@
+h1{
+  font: var(--title-lg);
+}
+
+h2{
+  font: var(--title-sm);
+}
+
+h3{
+  font: var(--title-xs);
+  color: var(--blue-light);
+}
+
+label{
+  color: var(--text-label);
+}
+
+.subtitle{
+  font: var(--subtitle);
+}
+
+strong{
+  color: var(--blue-light);
+}
+
+.button-primary{
+  background-color: var(--pink-dark);
+}
+
+.button-primary:hover{
+  background-color: var(--pink-base);
+}
+
+.button-secondary{
+  background-color: var(--blue-dark);
+}
+
+.button-secondary:hover{
+  background-color: var(--blue-mid);
+}
+
+ul li{
+  font: var(--body-xs);
+}
+
+.tag{
+  font: var(--tag);
+  text-transform: uppercase;
+  letter-spacing: 5%;
+}
