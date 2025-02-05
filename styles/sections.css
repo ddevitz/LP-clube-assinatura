@@ -4,6 +4,8 @@ section{
   align-items: center;
   text-align: center;
 
+  margin: 0 auto;
+
   & .description{
     height: 55vh;
     margin-top: 48px;
@@ -17,7 +19,7 @@ section{
   }
 }
 
-& .subtitle{
+.subtitle{
   display: flex;
   justify-content: center;
 
@@ -53,6 +55,137 @@ section{
       position: absolute;
       left: calc(50% - 80px/2 - 104.96px);
       top: calc(50% - 80px/2 + 76.13px);
+    }
+  }
+}
+
+.book-kit{
+  width: 375px;
+  height: 319px;
+  margin-block: 200px;
+
+  & .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    
+    & img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  & > div > p{
+    margin-top: 8px;
+    font-size: 0.875rem;
+  }
+
+  & .images{
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    margin-top: 96px;
+
+    width: 100%;
+    height: 85vh;
+    
+    & .group-1{
+      & small{
+        position: absolute;
+        left: 7%;
+        top: -30%;
+      }
+
+      & img[src*="arrow"]{
+        position: absolute;
+
+        width: 58.74px;
+        height: 10.1px;
+
+        left: 16%;
+        top: -14%;
+      }
+
+      & img[src*="book"]{
+        position: absolute;
+
+        width: 157.19px;
+        height: 207.68px;
+
+        left: 28%;
+        top: -10%;
+      }
+    }
+
+    & .group-2{
+      & small{
+        position: absolute;
+
+        left: 7%;
+        top: 53%;
+      }
+
+      & img[src*="arrow"]{
+        position: absolute;
+        left: 13%;
+        bottom: -36%;
+
+        width: 25.81px;
+        height: 177.51px;
+      }
+
+      & img[src*="pin"]{
+        position: absolute;
+        left: 15.4%;
+        bottom: -35%;
+
+        transform: rotate(352deg);
+        z-index: -1;
+
+        width: 74.89px;
+        height: 85.4px;
+      }
+    }
+
+    & .group-3{
+      & small{
+        position: absolute;
+        right: 15%;
+        bottom: -50%;
+      }
+      & img[src*="arrow"]{
+        position: absolute;
+        right: 16%;
+        bottom: -35%;
+
+        width: 48.96px;
+        height: 50.99px;
+      }
+
+      & img[src*="yellow"]{
+        position: absolute;
+        z-index: -1;
+        right: 20%;
+        top: -20%;
+        transform: rotate(10deg);
+
+        width: 58.4px;
+        height: 180.92px;
+      }
+
+      & img[src*="purple"]{
+        position: absolute;
+        z-index: -2;
+        right: 11%;
+        top: 0%;
+        transform: rotate(19deg);
+
+        width: 58.4px;
+        height: 180.92px;
+      }
     }
   }
 }
@@ -104,6 +237,108 @@ section{
         top: calc(50% - 80px/2 + 104.13px);
       }
     }
+  }
+
+  .book-kit{
+    width: 877px;
+    height: 815px;
+
+    & .title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      
+      & img{
+        width: 32px;
+        height: 32px;
+      }
+    }
+  
+    & > div > p{
+      font-size: 1rem;
+    }
+  
+    & .images{
+   
+      & .group-1{
+        & small{
+          left: 0%;
+          top: 8%;
+        }
+  
+        & img[src*="arrow"]{ 
+          width: 175px;
+          height: 30px;
+  
+          left: 8%;
+          top: 13%;
+        }
+  
+        & img[src*="book"]{
+          width: 467px;
+          height: 617px;
+  
+          left: 23%;
+          top: 15%;
+        }
+      }
+  
+      & .group-2{
+        & small{
+          left: 0%;
+          top: 65%;
+        }
+  
+        & img[src*="arrow"]{
+          left: 2%;
+          bottom: 9%;
+  
+          width: 105px;
+          height: 127px;
+        }
+  
+        & img[src*="pin"]{
+          left: 7%;
+          bottom: -22%;
+  
+          width: 222px;
+          height: 254px;
+        }
+      }
+  
+      & .group-3{
+        & small{
+          right: 11%;
+          bottom: -24%;
+        }
+
+        & img[src*="arrow"]{
+          right: 5%;
+          bottom: -18%;
+  
+          width: 145px;
+          height: 152px;
+        }
+  
+        & img[src*="yellow"]{
+          right: 10.7%;
+          top: 7%;
+  
+          width: 172px;
+          height: 536px;
+        }
+  
+        & img[src*="purple"]{
+          right: -1%;
+          top: 19%;
+
+          width: 172px;
+          height: 536px;
+        }
+      }
+    }
+  
   }
 }
 

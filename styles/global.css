@@ -89,6 +89,10 @@ img{
   width: 100%;
 }
 
+small{
+  font-size: 0.625rem;
+}
+
 .mobile-only{
   display: initial;
 }
@@ -110,5 +114,9 @@ img{
     .mobile-only{
       display: none;
     }  
+  }
+
+  small{
+    font-size: 1rem;
   }
 }
