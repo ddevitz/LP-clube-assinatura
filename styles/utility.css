@@ -16,7 +16,8 @@ label{
 }
 
 strong{
-  color: var(--blue-light);
+  text-decoration: none;
+  font-weight: 400;
 }
 
 ul li{
@@ -40,6 +41,11 @@ ul li{
   
   h2{
     font: var(--title-sm);
+  }
+
+  strong{
+    color: var(--blue-light);
+    font-weight: 700;
   }
 
   .subtitle{

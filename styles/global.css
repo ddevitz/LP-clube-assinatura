@@ -48,7 +48,14 @@ body{
   font: var(--body-md);
 
   background-color: var(--shape-background);
-  height: 100vh;
+  
+  position: relative;
+
+  & > img{
+    position: absolute;
+    z-index: -1;
+    height: 464px;
+  }
 }
 
 h1, 
@@ -91,11 +98,17 @@ img{
 }
 
 @media (min-width: 80em){
-  .desktop-only{
-    display: initial;
-  }  
-
-  .mobile-only{
-    display: none;
-  }  
+  body{
+    & > img{
+      height: 100vh;
+    }
+    
+    .desktop-only{
+      display: initial;
+    }  
+  
+    .mobile-only{
+      display: none;
+    }  
+  }
 }
