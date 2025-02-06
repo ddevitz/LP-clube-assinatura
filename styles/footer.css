@@ -1,0 +1,131 @@
+footer{
+  display: grid;
+  align-items: center;
+  margin-top: 150px;
+
+  position: relative;
+
+  & img[src*="trace"]{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  & > div{
+    display: grid;
+    gap: 40px;
+
+    padding: 38px 32px;
+
+    & .social{
+      display: grid;
+      justify-items: center;
+
+      & > img{
+        width: 158.62px;
+        height: 40px;
+      }
+
+      & .line{
+        width: 100%;
+        border: 1px solid var(--shape-stroke);
+        margin-block: 12px;
+      }
+  
+      & .links-social{
+        display: flex;
+        gap: 5px;
+
+        & img{
+          margin: 8px;
+
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  
+    & .links{
+      display: flex;
+      gap: 56px;
+
+      & ul{
+        display: grid;
+        gap: 12px;
+
+        & .title-list{
+          font: var(--title-xs);
+          margin-bottom: 6px;
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 80em){
+  footer{
+    display: grid;
+    align-items: center;
+    margin-top: 350px;
+  
+    position: relative;
+  
+    & img[src*="background"]{
+      position: absolute;
+      z-index: -1;
+      object-fit: cover;
+    }
+  
+    & > div{
+      display: flex;
+      justify-content: space-between;
+  
+      padding-inline: 160px;
+  
+      & .social{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    
+        & > img{
+          width: 264px;
+          height: 66.57px;
+        }
+  
+        & .line{
+          border: 1px solid var(--shape-stroke);
+          margin-block: 12px;
+        }
+    
+        & .links-social{
+          display: flex;
+          gap: 5px;
+  
+          & img{
+            margin: 8px;
+  
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    
+      & .links{
+        display: flex;
+        gap: 56px;
+  
+        & ul{
+          display: grid;
+          gap: 12px;
+  
+          & .title-list{
+            font: var(--title-xs);
+            margin-bottom: 6px;
+  
+          }
+        }
+      }
+    }
+  }
+}

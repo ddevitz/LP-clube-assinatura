@@ -65,8 +65,9 @@ button{
 }
 
 a{
+  text-decoration: none;
   list-style: none;
-  color: inherit;
+  color: var(--blue-light);
   font: var(--link);
 }
 

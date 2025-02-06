@@ -193,12 +193,15 @@ section{
 .plan-prices{
 
   & > h2{
-    margin-bottom: 140px;
+    margin-bottom: 48px;
   }
 
   & .cards{
     display: flex;
     gap: 1rem;
+    
+    min-width: 322px;
+    min-height: 325px;
 
     & .card{
       display: flex;
@@ -419,6 +422,11 @@ section{
   }
 
   .plan-prices{
+
+    & > h2{
+      margin-bottom: 130px;
+    }
+  
     & .cards{
       position: relative;
 
@@ -466,10 +474,6 @@ section{
       & .card:nth-child(5){
         z-index: -1;
       }
-
-      /* & .card:nth-child(2){
-        border: 0;
-      } */
     }
   }
 }
