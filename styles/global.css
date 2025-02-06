@@ -55,6 +55,9 @@ body{
     position: absolute;
     z-index: -1;
     height: 464px;
+    opacity: 0;
+
+    animation: fade-in 3s ease both;
   }
 }
 
@@ -119,5 +122,11 @@ small{
 
   small{
     font-size: 1rem;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
   }
 }

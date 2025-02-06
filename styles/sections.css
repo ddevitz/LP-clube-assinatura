@@ -16,6 +16,13 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    animation: fade-in 2.5s ease both;
+
+    & > p{
+    animation: fade-in 3.5s ease both;
+
+    }
   }
 }
 
@@ -33,6 +40,8 @@ section{
     width: 40px;
     height: 40px;
 
+    transition: scale 350ms ease;
+
     &:nth-child(1){
       position: absolute;
       left: calc(50% - 88px/2 + 113.19px);
@@ -42,19 +51,23 @@ section{
     }
 
     &:nth-child(3){
-      transform: rotate(20deg);
-
       position: absolute;
       left: calc(50% - 72px/2 + 120.14px);
       top: calc(50% - 72px/2 + 74.15px);
+
+      transform: rotate(20deg);
     }
 
     &:nth-child(4){
-      transform: rotate(330deg);
-      
       position: absolute;
       left: calc(50% - 80px/2 - 104.96px);
       top: calc(50% - 80px/2 + 76.13px);
+      
+      transform: rotate(330deg);
+    }
+
+    &:hover {
+      scale: 1.1;
     }
   }
 }
@@ -365,6 +378,7 @@ section{
       }
   
       & .group-2{
+        
         & small{
           left: 0%;
           top: 65%;
@@ -478,3 +492,11 @@ section{
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
